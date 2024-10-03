@@ -1,1 +1,1 @@
-# rummy-product-nodejs
+# allRummy
