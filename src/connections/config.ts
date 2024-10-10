@@ -134,8 +134,9 @@ function getEnvJSON(env: any) {
         MAXIMUM_TABLE_CREATE_LIMIT: NUMERICAL.THREE,
 
           // server url
-        SERVER_URL : `https://9bdb-27-54-182-197.ngrok-free.app`,
-        GET_ONE_ROBOT: `http://localhost:7000/bot/getBot`,
+        SERVER_URL : `http://finixgamesstudio.com:3005`,
+        GET_ONE_ROBOT: `http://finixgamesstudio.com:7000/bot/getBot`,
+        // GET_ONE_ROBOT: `http://localhost:7000/bot/getBot`,
 
         // ALL_RUMMY_MODE
         IS_CASH : false ,
