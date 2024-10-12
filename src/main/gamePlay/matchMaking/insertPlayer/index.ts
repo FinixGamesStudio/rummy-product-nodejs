@@ -773,6 +773,7 @@ export async function insertNewPlayer(
                             // });
                             
                             logger.info('------>> roundTableData :: 1 :: tableData.isUseBot ::-->>', tableData.isUseBot);
+                            logger.info('------>> roundTableData :: 5555 :: tableData.botSeatCount ::-->>', tableData.botSeatCount);
 
                             /* bot seat and how many bot seat */
                             if (tableData.isUseBot && roundTableData.totalPlayers < tableData.botSeatCount && !isCreateRoom) {
