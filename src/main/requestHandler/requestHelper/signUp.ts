@@ -43,11 +43,11 @@ async function signUpHandler(
         // }
 
         let botType = await getRandomBotType()
-        let botJoinTimer = await getRandomNumber(NUMERICAL.FIVE, NUMERICAL.EIGHT)
+        let botJoinTimer = await getRandomNumber(NUMERICAL.THREE, NUMERICAL.FIVE)
         let botSeatCount = await getRandomNumber(NUMERICAL.ONE, NUMERICAL.FOUR)
 
         signUpData.botType = botType ? botType : BOT_CONSTANT.BOT_TYPES.EXCELLENT;
-        signUpData.botJoinTimer = botJoinTimer ? botJoinTimer : NUMERICAL.FIVE as number; //seconds
+        signUpData.botJoinTimer = botJoinTimer ? botJoinTimer : NUMERICAL.THREE as number; //seconds
         signUpData.botSeatCount = signUpData.noOfPlayer == NUMERICAL.SIX ? botSeatCount : NUMERICAL.ONE;
 
         signUpData = await Validator.requestValidator.signUpValidator(signUpData);
