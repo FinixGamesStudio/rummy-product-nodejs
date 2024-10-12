@@ -48,7 +48,7 @@ async function signUpHandler(
 
         signUpData.botType = botType ? botType : BOT_CONSTANT.BOT_TYPES.EXCELLENT;
         signUpData.botJoinTimer = botJoinTimer ? botJoinTimer : NUMERICAL.FIVE as number; //seconds
-        signUpData.botSeatCount = signUpData.noOfPlayer = NUMERICAL.SIX ? botSeatCount : NUMERICAL.ONE;
+        signUpData.botSeatCount = signUpData.noOfPlayer == NUMERICAL.SIX ? botSeatCount : NUMERICAL.ONE;
 
         signUpData = await Validator.requestValidator.signUpValidator(signUpData);
         logger.info("------>> SignUpHandler :: signUpData :: ", signUpData)
