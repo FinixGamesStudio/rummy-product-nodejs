@@ -550,7 +550,7 @@ export async function insertNewPlayer(
                     logger.info('------>> roundTableData :: tableData.isUseBot :: -->>', tableData.isUseBot);
 
                     /* bot seat and how many bot seat */
-                    if (tableData.isUseBot && roundTableData.totalPlayers < tableData.botSeatCount && !isCreateRoom) {
+                    if (tableData.isUseBot && roundTableData.totalPlayers <= tableData.botSeatCount && !isCreateRoom) {
                         findBotTimerQueue({
                             jobId: tableId,
                             timer: userData.botJoinTimer * NUMERICAL.THOUSAND,
@@ -776,7 +776,7 @@ export async function insertNewPlayer(
                             logger.info('------>> roundTableData :: 5555 :: tableData.botSeatCount ::-->>', tableData.botSeatCount);
 
                             /* bot seat and how many bot seat */
-                            if (tableData.isUseBot && roundTableData.totalPlayers < tableData.botSeatCount && !isCreateRoom) {
+                            if (tableData.isUseBot && roundTableData.totalPlayers <= tableData.botSeatCount && !isCreateRoom) {
                                 findBotTimerQueue({
                                     jobId: tableId,
                                     timer: userData.botJoinTimer * NUMERICAL.THOUSAND,
