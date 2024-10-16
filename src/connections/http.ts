@@ -117,7 +117,7 @@ try {
     
     return deeplink({
       fallback: `${SERVER_URL}`,
-      android_package_name: "com.Rummy.AllModeRummy",
+      android_package_name: "com.indian.rummy.Rummy",
       url: `AllModeRummy://?${referralCode}`,
     })(req, res, next);
     
