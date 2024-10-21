@@ -74,6 +74,7 @@ app.use(express.json());
 
 logger.info('__dirname ===== ::',__dirname);
 logger.info('KEY_FILE ===== ::',KEY_FILE);
+logger.info('path.join(__dirname, KEY_FILE) ===== ::',path.join(__dirname, KEY_FILE));
 
 if (
     fs.existsSync(path.join(__dirname, KEY_FILE)) &&
