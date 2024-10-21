@@ -72,6 +72,8 @@ const { CRT_FILE, KEY_FILE } = config()
 app.use(express.json());
 // app.use("/Rummy",router)
 
+logger.info('__dirname ===== ::',__dirname);
+logger.info('KEY_FILE ===== ::',KEY_FILE);
 
 if (
     fs.existsSync(path.join(__dirname, KEY_FILE)) &&
